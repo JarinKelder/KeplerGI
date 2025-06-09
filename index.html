@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaflet Kaart Suriname</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Leaflet Search CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search@2.9.8/dist/leaflet-search.min.css" />
+
+  <!-- Leaflet CSS zonder integrity -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Leaflet Geocoder CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.pm@latest/dist/leaflet.pm.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  
+  <!-- Eigen CSS -->
+  <link rel="stylesheet" href="stijl.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-title">
+      <img src="LOGO_V4.jpeg" alt="Logo" class="logo" />
+      <h1>Kepler Geo-Informatics N.V.</h1>
+    </div>
+    <div class="header-buttons">
+      <a href="https://www.arcgis.com/apps/webappviewer/index.html?id=03fcf6e8dc7548c8954a0c918c137214" target="_blank" class="header-button">MI-GLIS</a>
+      <button id="nav-toggle" class="header-button">Navigatie starten</button>
+    </div>
+  </header>
+  
+  <div id="map"></div>
+
+  <!-- Scripts -->
+
+  <!-- Leaflet Search JS -->
+  <script src="https://unpkg.com/leaflet-control-search@2.9.8/dist/leaflet-search.min.js"></script>
+
+  <!-- Leaflet en andere plugins -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
+  <script src="https://cdn.jsdelivr.net/gh/makinacorpus/Leaflet.GeometryUtil/src/leaflet.geometryutil.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+  <script src="https://unpkg.com/leaflet.pm@latest/dist/leaflet.pm.min.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script> 
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://unpkg.com/leaflet.pattern/leaflet.pattern.min.js"></script>
+
+  <!-- Eigen JS (moet onderaan staan) -->
+  <script src="leafletjava.js"></script>
+</body>
+</html>
